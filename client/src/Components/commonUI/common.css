@@ -1,0 +1,40 @@
+.NextButton,
+.BackButton{
+    font-size: 1rem;
+    padding: 10px 10px 11px 10px;
+    border: none;
+    background-color: #55ba80;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px;
+    width: 80px;
+    transition: .3s ease-out;
+    margin: 8px;
+}
+
+.BackButton{
+    color: #55ba80;
+    background-color: white;
+    border: 1px solid #55ba80;
+    /* float: left; */
+    /* clear: both; */
+    margin: 0;
+
+}
+
+.NextButton:hover{
+    color: black;
+}
+
+.NextButton:disabled{
+    background-color: #55ba81af;
+}
+.NextButton:disabled:hover{
+    cursor: default;
+    color: white;
+}
+
+.BackButton:hover{
+    background-color: #55ba80;
+    color: white;
+}

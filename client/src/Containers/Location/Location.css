@@ -1,0 +1,59 @@
+.AddressDisplay{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 80%;
+}
+.AddressDisplay span{
+    margin: 8px 12px;
+}
+
+.AddressDisplay h1{
+    border-bottom: .5px solid grey;
+}
+
+.AddressDisplay h4{
+    font-size: 1.2em;
+}
+
+.LocationsWrapper{
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 8px 2px #ccc;
+}
+
+.LocationsFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+.ButtonWrappers{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 20% auto 0px;
+}
+
+.LocationSearch{
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+}
+
+.ChooseAnotherLocation{
+    border: .5px solid #ccc;
+    padding: 0px 7px;
+    background-color: white;
+    font-size: 16px;
+    height: 45px;
+    margin: 8px;
+    cursor: pointer;    
+}
+
+.ChooseAnotherLocation:hover{
+    color: #55ba80;
+    border-color: #55ba80;
+}

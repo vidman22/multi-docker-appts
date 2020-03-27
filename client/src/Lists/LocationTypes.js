@@ -1,0 +1,11 @@
+export const ENCINITAS = {name: "Encinitas", id:'54219023' }
+export const LA_MESA = {name: "La Mesa", id:'54220023' }
+export const DEL_MAR = {name: "Del Mar", id:'54207023' }
+export const DOWNTOWN_SAN_DIEGO = {name: "Downtown San Diego", id:'54209023' }
+export const CHULA_VISTA = {name: "Chula Vista", id:'54208023' }
+export const LA_JOLLA_DOWNTOWN = {name: "La Jolla - Downtown", id:'54205023' }
+export const CARLSBAD = {name: "Carlsbad", id:'54206023' }
+export const HILLCREST = {name: "Hillcrest", id:'54202023' }
+export const CLAIREMONT = {name: "Clairemont", id:'54204023' }
+export const KENSINGTON = {name: "Kensington", id:'54201023' }
+export const LA_JOLLA_XIMED = {name: 'La Jolla - XiMED', id:'54203023' }

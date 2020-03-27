@@ -1,0 +1,70 @@
+
+.FilterSideBar{
+    /* width: 202px; */
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: 0px; */
+    padding: 8px 8px;
+    top: 90px;
+    left: 1.2em;
+    max-height: 300px;
+ 
+    /* overflow: scroll; */
+    box-shadow:0 0 9px #ccc;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.SideBarFilterHeader{
+    text-align: left;
+    cursor: pointer;
+    padding: 10px 0px 0 0px;
+}
+
+.FilterWrapper{
+    /* width: fit-content; */
+}
+
+.ListItems{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 180px;
+}
+
+.ClearFilter{
+    color: #55ba80;
+    cursor: pointer;
+    width: fit-content;
+}
+.ClearFilter:hover{
+    color: black;
+}
+
+.ProviderSearchInput{
+    width: 20%;
+    margin: 0 0 0 0%;
+}
+
+.VisitTypeRadio,
+.VisitTypeCheckbox{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 1px;
+}
+
+.VisitTypeCheckbox{
+    margin: 5px;
+}
+
+.VisitTypeCheckBox .ConfigName{
+    position: relative;
+    left: 28px;
+}
