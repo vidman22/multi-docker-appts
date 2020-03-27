@@ -1,0 +1,76 @@
+.FinalPage{
+    display: block;
+    width: 880px;
+    height: 700px;
+    margin: auto;
+    background-color: #fff;/*#eaeaea; */
+    padding: 20px;
+    box-shadow: 0px 0px 9px 2px #ccc;
+}
+.FinalPage h1{
+    font-family: 'brandon-bold', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.ClipIframe{
+    display: block;
+    margin: auto;
+    width: 699px;
+    height: 495px;
+    overflow: hidden;
+    position: relative;
+    top: 12px;
+    bottom: 0px;
+    /* left: 20%; */
+    clip: rect(5px, 0px, 0px, 0px);
+}
+
+.IframeLocationMyChart{
+    display: block;
+    margin: auto;
+    width: 716px;
+    height:  530px;
+    position: absolute;
+    left: -1px;
+    top: -24px;
+    border: none;
+}
+.IframeLocationMyChart::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .IframeLocationMyChart::-webkit-scrollbar-track {
+    background: white; 
+  }
+
+  .IframeLocationMyChart::-webkit-scrollbar-track:hover {
+    background: #eee; 
+  }
+
+  .IframeLocationMyChart::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px; 
+  }
+
+  .IframeLocationMyChart::-webkit-scrollbar-corner{
+  background: white;
+} 
+
+@media screen and (max-width: 760px){
+    .FinalPage{
+        width: 100%;
+        margin: auto;
+        padding: 6px;
+
+    }
+    .ClipIframe{
+        width: 98%;
+    }
+
+    .IframeLocationMyChart{
+        width: 98%;
+
+    }
+}
