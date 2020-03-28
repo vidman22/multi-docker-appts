@@ -1,0 +1,31 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t jviddie/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true jviddie/react-test npm test -- --coverage
+
+after_success:
+  - docker build -t jviddie/multi-appt-client ./client
+  - docker build -t jviddie/multi-appt-nginx ./nginx
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push jviddie/multi-appt-client
+  - docker push jviddie/multi-appt-nginx
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-west-1
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-west-1-306476627547
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
