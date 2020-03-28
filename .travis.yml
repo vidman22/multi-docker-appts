@@ -21,6 +21,7 @@ after_success:
   - docker push jviddie/multi-appt-nginx
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: us-west-1
   app: mulit-docker-appointments
