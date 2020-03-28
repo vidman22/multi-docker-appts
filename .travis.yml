@@ -1,4 +1,7 @@
-sudo: required
+os:
+  - linux
+lanuage: 
+  - ruby
 services:
   - docker
 
@@ -22,7 +25,7 @@ deploy:
   region: us-west-1
   app: mulit-docker-appointments
   env: MulitDockerAppointments-env
-  bucket_name: elasticbeanstalk-us-west-1-869407026545
+  bucket: elasticbeanstalk-us-west-1-869407026545
   bucket_path: mulit-docker-appointments
   on:
     branch: master
